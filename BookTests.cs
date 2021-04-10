@@ -3,15 +3,13 @@ using Xunit;
 
 namespace GradeBook.tests
 {
-    public class UnitTest1
+    public class BookTests
     {
         [Fact]
         public void Test1()
         {
             //Arrange
-            var x = 5;
-            var y = 2;
-            var expected = 7;
+            var book = new Book(""); //Is it legal to not have a name? This would be something to ask the business owner.
 
             //Act
             var actual = x + y;
